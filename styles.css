@@ -1,0 +1,129 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff5e6; /* Light cream background color */
+    color: #333;
+}
+
+header {
+    background-color: #a41e34; /* Deep red */
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #c69c6d; /* Gold */
+    position: relative;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    color: #fff;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: #fff;
+    padding: 1rem;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+nav a:hover {
+    background-color: #a41e34;
+    color: #fff;
+}
+
+section {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #a41e34; /* Deep red */
+}
+
+section p {
+    font-size: 1rem;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section ul li {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+footer {
+    background-color: #a41e34;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+@media (max-width: 600px) {
+    .menu-icon {
+        display: block;
+        margin: 1rem;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: left;
+        margin: 0;
+        padding: 1rem;
+        background-color: #c69c6d; /* Gold */
+        color: #a41e34; /* Deep red */
+    }
+
+    nav a:hover {
+        background-color: #a41e34;
+        color: #fff;
+    }
+}
+section#gallery {
+    text-align: center; /* Center the image */
+}
+
+section#gallery img {
+    max-width: 100%; /* Maximum width of the image is the width of its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
